@@ -1,12 +1,14 @@
 #include <iostream>
-#include "calculator.h"
+#include "MathApp.h"
 
 int main() {
-    Calculator calc;
-    
-    std::cout << "--- Jenkins Build Test ---" << std::endl;
-    std::cout << "Addition (10 + 5): " << calc.add(10, 5) << std::endl;
-    std::cout << "Subtraction (10 - 5): " << calc.subtract(10, 5) << std::endl;
-    
+    MathApp app;
+
+    std::cout << "--- Integration Test ---" << std::endl;
+
+    int result = app.computeExpression(10, 5);
+
+    std::cout << "Result: " << result << std::endl;
+
     return 0;
 }
