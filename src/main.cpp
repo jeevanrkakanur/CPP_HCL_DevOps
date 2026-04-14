@@ -1,14 +1,14 @@
 #include <iostream>
-#include "MathApp.h"
+#include "ReportService.h"
 
 int main() {
-    MathApp app;
+    ReportService report;
 
-    std::cout << "--- Integration Test ---" << std::endl;
+    std::cout << "--- Integration Test (Multiple Components) ---" << std::endl;
 
-    int result = app.computeExpression(10, 5);
+    int result = report.generateReport(10, 5);
 
-    std::cout << "Result: " << result << std::endl;
+    std::cout << "Final Result: " << result << std::endl;
 
     return 0;
 }
